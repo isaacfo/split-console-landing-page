@@ -108,7 +108,7 @@ h1 {
 .section.xbox,
 .section.playstation::before,
 .section.xbox::before {
-  transition: all 1000ms ease;
+  transition: width 1000ms ease-in-out;
 }
 
 .hover-left .playstation {
@@ -122,4 +122,15 @@ h1 {
 }
 .hover-rigth .playstation {
   width: var(--other-width);
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+  .buy {
+    padding: 1.2rem;
+    width: 12rem;
+  }
 }
